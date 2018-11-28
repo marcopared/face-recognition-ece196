@@ -182,7 +182,7 @@ def main(args):
         port=args.port,
         threaded=False,
         debug=args.debug,
-        ssl_context=None)
+        ssl_context=args.ssl)
 
 
 if(__name__ == "__main__"):
@@ -198,7 +198,7 @@ if(__name__ == "__main__"):
                         action='store_true')
     parser.add_argument('-s', '--ssl',
                         help="Whether or not to run with HTTPS",
-                        default='adhoc',
+                        default=None,
                         action='store_const',
                         const='adhoc')
 
