@@ -136,7 +136,7 @@ def get_person(person):
     return prediction_json
 
 
-@app.route('/predict')
+@app.route('/predict', methods=['GET', 'POST'])
 def predict():
     """Receives an image, classifies the image, and responds with the label."""
 
