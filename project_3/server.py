@@ -182,7 +182,7 @@ def main(args):
         port=args.port,
         threaded=False,
         debug=args.debug,
-        ssl_context=args.ssl)
+        ssl_context=None)
 
 
 if(__name__ == "__main__"):
