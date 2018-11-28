@@ -75,7 +75,7 @@ def classify(path_to_image):
     prediction = {'label': str(label),
                   'confidence': float(conf)}
 
-    return
+    return prediction
 
 
 @app.route('/')
